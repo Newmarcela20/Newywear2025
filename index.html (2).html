@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2025</title>
+    <style>
+        body {
+            margin: 0;
+            background: url('https://static.vecteezy.com/system/resources/previews/022/639/919/non_2x/couple-silhouette-standing-in-front-of-the-moon-ai-generated-free-photo.jpg') no-repeat center center/cover;
+            font-family: 'Verdana', sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            animation: zoom-in 2s ease-out infinite alternate;
+        }
+
+        @keyframes zoom-in {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .ascii-art {
+            white-space: pre-wrap;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #ffffff;
+            margin: 20px auto;
+            width: 90%;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            animation: fade-in 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes fade-in {
+            0% { opacity: 0.6; transform: translateY(0); }
+            50% { opacity: 1; transform: translateY(-10px); }
+            100% { opacity: 0.6; transform: translateY(0); }
+        }
+
+        .heart {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #ff4757;
+            transform: rotate(45deg);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #ff4757;
+            border-radius: 50%;
+        }
+
+        .heart:before {
+            top: -7.5px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 7.5px;
+            top: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-300px) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            animation: sparkle 3s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.5); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy New Year 2025!</h1>
+        <div class="ascii-art">
+            <pre>
+
+H A P P Y   N E W   Y E A R   2 0 2 5   S A Y A N G !
+
+SUDAH 4x TAHUN BARU AKU MASIH INGET PERTAMA KALI KITA NGERAYAIN
+TAHUN BARU BARENG DI RUMAH NIQ BAKARIN SOSIS SAMA IKUT MINUM ES
+BIKINAN KAMU. HAHAHAH..
+
+SEMOGA DI TH 2025 KITA BISA SUKSES BARENG DAN JADI ORANG PALING
+KAYA DI KAMPUNG DENGAN DUIT YANG TANPA SERI!!
+
+I LOVE YOU SAYANG!!
+
+
+_'▀█║────────────▄▄───────────​─▄──▄_
+──█║───────▄─▄─█▄▄█║──────▄▄──​█║─█║
+──█║───▄▄──█║█║█║─▄║▄──▄║█║─█║​█║▄█║
+──█║──█║─█║█║█║─▀▀──█║─█║█║─█║​─▀─▀
+──█║▄║█║─█║─▀───────█║▄█║─▀▀
+──▀▀▀──▀▀────────────▀─█║
+───────▄▄─▄▄▀▀▄▀▀▄──▀▄▄▀
+──────███████───▄▀
+──────▀█████▀▀▄▀
+────────▀█▀
+
+.__ .___.  .._.  .  ..__..___..__..   ._..__.
+|  \[__ \  / |   |\ |[__]  |  [__]|    | [__]
+|__/[___ \/ _|_  | \||  |  |  |  ||____|_|  |
+                                             
+                                                                                    
+FROM : 
+____ _  _ ____ _  _ ___  ____ _   _ 
+[__  |__| |  | |  | |__] |__|  \_/  
+___] |  | |__| |__| |    |  |   |   
+     
+
+            </pre>
+        </div>
+    </div>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            document.body.appendChild(heart);
+            const size = Math.random() * 10 + 10;
+            heart.style.width = `${size}px`;
+            heart.style.height = `${size}px`;
+            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            setTimeout(() => heart.remove(), 4000);
+        }
+
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle');
+            sparkle.style.left = `${Math.random() * 100}%`;
+            sparkle.style.top = `${Math.random() * 100}%`;
+            sparkle.style.animationDuration = `${Math.random() * 2 + 1}s`;
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 3000);
+        }
+
+        setInterval(createHeart, 300);
+        setInterval(createSparkle, 200);
+    </script>
+</body>
+</html>
